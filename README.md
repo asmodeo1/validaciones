@@ -5,3 +5,4 @@
 - ejemplo4: validaciones propias de los formularios HTML y usando estilos
 - ejemplo5: como el 4 pero poniendo * al lado de los inputs
 - ejemplo6: validaciones con JS y mostrando un alert con todos los errores
+- ejemplo7: como el 6 pero mostrando los mensajes de error en una lista
