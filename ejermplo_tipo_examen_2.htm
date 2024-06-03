@@ -15,18 +15,5 @@
             <input type="submit" value="enviar" class="d-block m-2 btn btn-primary">
         </form>
     </div>
-    <script>
-        document.getElementById('for').addEventListener("submit", function(evt){
-            const hoy = new Date();
-            const fecha = document.getElementById('texto').valueAsDate;
-            console.log("---",fecha);
-            if(fecha < hoy) {
-                console.log("menor");
-            } else {
-                console.log("mayor");
-            }
-            evt.preventDefault();
-        });
-    </script>
 </body>
 </html>
