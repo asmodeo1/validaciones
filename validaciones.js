@@ -66,7 +66,7 @@ function tieneLongitudMinimaMaxima(texto, minimo, maximo) {
  */
 function isEntero(valor) {
     const numero = parseInt(valor, 10);
-    if (isNaN(numero) || numero.toString() !== valor.value) {
+    if (isNaN(numero) || numero.toString() !== valor) {
         return false;
     } else {
         return true;
@@ -81,7 +81,7 @@ function isEntero(valor) {
  */
 function isEnteroMinimo(valor, minimo) {
     const numero = parseInt(valor, 10);
-    if (isNaN(numero) || numero.toString() !== valor.value || numero < minimo) {
+    if (isNaN(numero) || numero.toString() !== valor || numero < minimo) {
         return false;
     } else {
         return true;
@@ -96,7 +96,7 @@ function isEnteroMinimo(valor, minimo) {
  */
 function isEnteroMaximo(valor, maximo) {
     const numero = parseInt(valor, 10);
-    if (isNaN(numero) || numero.toString() !== valor.value || numero > maximo) {
+    if (isNaN(numero) || numero.toString() !== valor || numero > maximo) {
         return false;
     } else {
         return true;
@@ -112,7 +112,7 @@ function isEnteroMaximo(valor, maximo) {
  */
 function isEnteroMinimoMaximo(valor, minimo, maximo) {
     const numero = parseInt(valor, 10);
-    if (isNaN(numero) || numero.toString() !== valor.value || numero < minimo || numero > maximo) {
+    if (isNaN(numero) || numero.toString() !== valor || numero < minimo || numero > maximo) {
         return false;
     } else {
         return true;
