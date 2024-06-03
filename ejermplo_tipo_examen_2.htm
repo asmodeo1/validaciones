@@ -11,15 +11,15 @@
         <h1 class="text-center">Expresiones regulares</h1>
         <form action="" id="for">
             <label for="texto" class="d-block">texto</label>
-            <input type="text" id="texto" required>
+            <input type="date" id="texto" required>
             <input type="submit" value="enviar" class="d-block m-2 btn btn-primary">
         </form>
     </div>
     <script>
         document.getElementById('for').addEventListener("submit", function(evt){
             const hoy = new Date();
-            const fecha = document.getElementById('fecha').valueAsDate;
-            console.log(fecha);
+            const fecha = document.getElementById('texto').valueAsDate;
+            console.log("---",fecha);
             if(fecha < hoy) {
                 console.log("menor");
             } else {

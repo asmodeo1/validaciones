@@ -5,7 +5,7 @@ function comprobarDatos(evt) {
         console.log("Falta el nombre");
         evt.preventDefault();
     }
-    const patronNombre = /[a-z ]{3,}/i; // con i no diferencia mayúsculas de minúsculas
+    const patronNombre = /^[a-z ]{3,}$/i; // con i no diferencia mayúsculas de minúsculas
     if(patronNombre.test(nombre.value) == false) {
         console.log("El nombre solo admite letras inglesas y al menos 3");
         evt.preventDefault();
@@ -32,8 +32,8 @@ function comprobarDatos(evt) {
         console.log("Las claves no coinciden");
         evt.preventDefault();
     }
-    const patronClave = /(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){6,}/;
-    //if(/(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){6,}/.test(clave) == false) {
+    const patronClave = /^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){6,}$/;
+    //if(/^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){6,}$/.test(clave) == false) {
     if(patronClave.test(clave) == false) {
         console.log("La clave no cumple las condiciones");
         evt.preventDefault();
