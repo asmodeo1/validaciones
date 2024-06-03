@@ -1,0 +1,6 @@
+5 números: \d{5}
+entre 3 y 5 números: \d{3,5}
+ABC y luego un número: ABC\d
+una vocal en mayús, seguida de 2 números y luego una H, I o J: [AEIOU]\d\d[HIJ]
+años superiores o iguales al 2000: 2\d\d\d
+años superiores al 2000: 2\d\d[1-9]

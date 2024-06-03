@@ -11,15 +11,15 @@
         <h1 class="text-center">Alta de productos</h1>
         <form action="" id="formulario">
             <label for="codigo" class="d-block">Código</label>
-            <input type="text" id="codigo">
+            <input type="text" id="codigo" required pattern="[a-zA-Z]\d{3}">
             <label for="nombre" class="d-block">Nombre</label>
-            <input type="text" id="nombre">
+            <input type="text" id="nombre" required minlength="6">
             <label for="cantidad" class="d-block">Cantidad</label>
-            <input type="text" id="cantidad">
+            <input type="number" id="cantidad" required min="1">
             <label for="observaciones" class="d-block">Observaciones</label>
             <textarea id="observaciones" class="w-100" rows="5"></textarea>
             <label for="email" class="d-block">E-mail</label>
-            <input type="text" id="email">
+            <input type="text" id="email" required>
             <input type="submit" value="enviar" class="d-block m-2 btn btn-primary">
         </form>
     </div>
