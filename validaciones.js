@@ -61,7 +61,7 @@ function tieneLongitudMinimaMaxima(texto, minimo, maximo) {
 
 /**
  * Comprueba si un valor es un número entero
- * @param {any} valor - valor a comprobar
+ * @param {string} valor - valor a comprobar
  * @returns {boolean} - true si es un entero, false si no
  */
 function isEntero(valor) {
@@ -75,7 +75,7 @@ function isEntero(valor) {
 
 /**
  * Comprueba si un valor es un número entero y mayor o igual al mínimo indicado
- * @param {any} valor - valor a comprobar
+ * @param {string} valor - valor a comprobar
  * @param {number} minimo - número mínimo admitido
  * @returns {boolean} - true si lo es, false si no
  */
@@ -90,7 +90,7 @@ function isEnteroMinimo(valor, minimo) {
 
 /**
  * Comprueba si un valor es un número entero y menor o igual al máximo indicado
- * @param {any} valor - valor a comprobar
+ * @param {string} valor - valor a comprobar
  * @param {number} maximo - número máximo admitido
  * @returns {boolean} - true si lo es, false si no
  */
@@ -105,7 +105,7 @@ function isEnteroMaximo(valor, maximo) {
 
 /**
  * Comprueba si un valor es un número entero y en el rango indicado
- * @param {any} valor - valor a comprobar
+ * @param {string} valor - valor a comprobar
  * @param {number} minimo - número mínimo admitido
  * @param {number} maximo - número máximo admitido
  * @returns {boolean} - true si lo es, false si no
@@ -121,7 +121,7 @@ function isEnteroMinimoMaximo(valor, minimo, maximo) {
 
 /**
  * Comprueba si un valor es un número decimal
- * @param {any} valor - valor a comprobar
+ * @param {string} valor - valor a comprobar
  * @returns {boolean} - true si es un número decimal, false si no
  */
 function isNumeroDecimal(valor) {
