@@ -1,0 +1,13 @@
+-	un número de 4 dígitos: 
+        \d{4} o \d\d\d\d o [0-9]{4} o [0-9][0-9][0-9][0-9]
+
+-	un número de entre 2 y 4 dígitos: 
+        \d{2,4}
+
+-	una letra inglesa y uno o más números: 
+        [a-z]\d{1,} o [a-z]\d+
+
+-	un teléfono de la forma xxx-xx-xx-xx siendo x un número entre 0 y 9:
+    \d{3}-\d\d-\d\d-\d\d o \d{3}-(\d\d-){2}\d\d
+
+

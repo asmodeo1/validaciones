@@ -22,3 +22,4 @@ function comprobar(evt) {
 }
 
 document.getElementById("formulario").addEventListener("submit", comprobar);
+
